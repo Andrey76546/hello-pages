@@ -1,0 +1,10 @@
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+/.idea/
+/.vscode/
+/.edge-profile*/
+.env
+*.local
+.DS_Store

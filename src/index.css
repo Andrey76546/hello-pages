@@ -1,0 +1,143 @@
+:root {
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: #1f2937;
+  background: #4c1d95;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(167, 139, 250, 0.55), transparent 30%),
+    radial-gradient(circle at 88% 78%, rgba(59, 130, 246, 0.35), transparent 28%),
+    linear-gradient(135deg, #4f46e5 0%, #6d28d9 48%, #4c1d95 100%);
+}
+
+button,
+a {
+  font: inherit;
+}
+
+.app {
+  width: min(100% - 2rem, 820px);
+  margin: 0 auto;
+  padding: 4.5rem 0 2.5rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: clamp(2.8rem, 9vw, 4.8rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.subtitle {
+  margin: 1rem 0 0;
+  font-size: 1.2rem;
+  opacity: 0.88;
+}
+
+.card {
+  margin-bottom: 1rem;
+  padding: 1.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 18px 48px rgba(30, 27, 75, 0.24);
+  backdrop-filter: blur(12px);
+}
+
+.card h2 {
+  margin: 0 0 0.8rem;
+  color: #5b21b6;
+  font-size: 1.35rem;
+}
+
+.card p {
+  margin: 0;
+  line-height: 1.75;
+}
+
+.project-list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-list li {
+  display: grid;
+  grid-template-columns: minmax(110px, 0.35fr) 1fr;
+  gap: 1rem;
+  align-items: baseline;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.project-list li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.project-list strong {
+  color: #4338ca;
+}
+
+.project-list span {
+  color: #4b5563;
+}
+
+code {
+  padding: 0.12rem 0.35rem;
+  border-radius: 5px;
+  color: #5b21b6;
+  background: #ede9fe;
+  font-size: 0.92em;
+}
+
+.footer {
+  margin-top: 2rem;
+  color: white;
+  text-align: center;
+  opacity: 0.82;
+}
+
+@media (max-width: 560px) {
+  .app {
+    padding-top: 2.5rem;
+  }
+
+  .project-list li {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}
