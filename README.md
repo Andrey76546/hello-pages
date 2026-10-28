@@ -78,6 +78,7 @@ docker run --rm -e HOME=/tmp -v "${PWD}:/app" -w /app node:24-alpine `
 ## CI/CD и публикация
 
 - [Все запуски CI/CD](https://github.com/Andrey76546/hello-pages/actions/workflows/ci-cd.yml)
+- [Контрольный успешный CI/CD Deploy](https://github.com/Andrey76546/hello-pages/actions/runs/40790687827)
 - [Deployments](https://github.com/Andrey76546/hello-pages/deployments)
 - [Environment github-pages](https://github.com/Andrey76546/hello-pages/settings/environments)
 - [Опубликованный сайт](https://andrey76546.github.io/hello-pages/)
